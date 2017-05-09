@@ -21,7 +21,6 @@ module Api::V1
 
       if @scratcher.save
         render json: @scratcher
-        #serializer: NewUsersSerializer
       else
         render json: @scratcher.errors, status: :unprocessable_entity
       end
